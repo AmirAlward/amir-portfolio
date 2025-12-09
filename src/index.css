@@ -1,0 +1,22 @@
+/* src/index.css */
+@import "tailwindcss";
+
+@layer components {
+  .btn-animated {
+    @apply inline-block px-3.5 py-3.5 bg-black text-white text-[14px] leading-none font-light rounded-full no-underline
+           transition-all duration-900 ease-out transform;
+  }
+
+  .btn-animated:hover {
+    @apply bg-[#F5F5F5] text-black scale-110 shadow-none;
+  }
+}
+
+/* Apply DM Sans to the entire site */
+html {
+  font-family: 'DM Sans', 'DM Sans Placeholder', sans-serif;
+}
+body {
+  font-family: 'DM Sans', 'DM Sans Placeholder', sans-serif;
+}
+
