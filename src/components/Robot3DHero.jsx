@@ -3,8 +3,7 @@ import React, { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Stage, useGLTF } from "@react-three/drei";
 
-import robotModelUrl from "../assets/robot/ROBOT_MH_12_YASKWA.gltf";
-
+const robotModelUrl = "/assets/ROBOT_MH_12_YASKWA.gltf";
 
 function RobotModel() {
   const { scene } = useGLTF(robotModelUrl); // destructure scene from the loaded model
