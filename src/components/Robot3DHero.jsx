@@ -5,7 +5,7 @@ import { OrbitControls, Stage, useGLTF } from "@react-three/drei";
 
 function RobotModel() {
   // Load model from public/assets/
-  const { scene } = useGLTF("/assets/ROBOT MH 12 YASKWA.gltf");
+  const { scene } = useGLTF("../../assets/robot/ROBOT MH 12 YASKWA.gltf");
 
   // Rotate the whole robot upright
   scene.rotation.x = -Math.PI / 2; // -90° X
