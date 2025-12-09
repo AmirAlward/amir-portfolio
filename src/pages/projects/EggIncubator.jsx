@@ -3,6 +3,7 @@ import React from "react";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import ProjectTitleBlock from "../../components/ProjectTitleBlock.jsx";
+import VideoOnScroll from "../../components/layout/VideoOnScroll.jsx"; 
 
 
 // eslint-disable-next-line no-unused-vars
@@ -63,15 +64,10 @@ const MediaItem = ({ src, type, caption }) => (
       />
     )}
 
-    {type === "video" && (
-     <video
-  src={src}
-  controls
-  className="w-full sm:max-w-[90vh] h-auto max-h-[90vh] rounded-md object-contain"
-  preload="metadata"
-/>
+{type === "video" && (
+  <VideoOnScroll src={src} />
+)}
 
-    )}
 
     {caption && (
       <figcaption className="mt-2 text-gray-600 text-sm text-center max-w-full">
@@ -115,7 +111,7 @@ export default function EggIncubator() {
           title="Demonstration Video"
           description="The IoT Egg Incubator autonomously maintains precise temperature and humidity while gently turning eggs for uniform development. In this demo, you’ll see it reach the target temperature in under 20 minutes, hold ±0.03 °C stability at the egg level, and perform automated egg-turning cycles. Real-time monitoring and remote control are enabled via IoT, showcasing the system’s fully autonomous operation."
         >
-          <MediaItem src="/assets/Incubator_Working.mp4" type="video" caption="Incubator working in real-time" />
+          <MediaItem src="/videos/Incubator_Working.mp4" type="video" caption="Incubator working in real-time" />
         </MediaSection>
 
         {/* Temperature / PID Performance */}
@@ -123,7 +119,7 @@ export default function EggIncubator() {
           title="Temperature Control Performance"
           description="The IoT Egg Incubator quickly reached the target temperature and maintained ±0.03 °C precision at the egg level. Automated egg-turning ensured uniform orientation, while IoT monitoring provided real-time data for temperature, humidity, and turning cycles. The system demonstrated reliable, fully autonomous operation, reducing manual intervention and improving hatching consistency."
         >
-          <MediaItem src="/assets/Temp.mp4" type="video" caption="Real-time PID tuning and temperature results" />
+          <MediaItem src="/videos/Temp.mp4" type="video" caption="Real-time PID tuning and temperature results" />
         </MediaSection>
 
         {/* Solution */}

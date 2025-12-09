@@ -7,16 +7,13 @@ import Footer from "../../components/Footer";
 import ProjectTitleBlock from "../../components/ProjectTitleBlock.jsx";
 
 
+// Assets
+import forward from "../../assets/robot/robotFKine.png";
 import Robot3DHero from "../../components/Robot3DHero";
-
-// Assets in public folder — no import needed
-const forward = "/assets/robot/robotFKine.png";
-const inverseK = "/assets/robot/robotInKine.png";
-const workS = "/assets/robot/D-plot-of-arm-workspace.png";
-const Dyna = "/assets/robot/robotDyna.png";
-const first = "/assets/robot/first.jpg";
-
-// Example usage in JSX
+import inverseK from "../../assets/robot/robotInKine.png";
+import workS from "../../assets/robot/D-plot-of-arm-workspace.png";
+import Dyna from "../../assets/robot/robotDyna.png";
+import first from "../../assets/robot/first.jpg";
 
 const fadeIn = {
   hidden: { opacity: 0, y: 20 },
@@ -40,13 +37,18 @@ const MediaItem = ({ src, type, caption }) => (
       />
     )}
     {type === "video" && (
-      <video
-        src={src}
-        controls
-        className="w-full max-w-3xl h-auto rounded-md"
-        preload="metadata"
-      />
-    )}
+  <video
+    src={src}
+    controls
+    autoPlay
+    loop
+    muted
+    playsInline
+    className="w-full max-w-3xl h-auto rounded-md"
+    preload="metadata"
+  />
+)}
+
     {caption && (
       <figcaption className="mt-2 text-gray-600 text-sm text-center max-w-full">
         {caption}
@@ -203,7 +205,7 @@ This project demonstrates complete mastery of robotic modeling, workspace analys
         </section>
 
         <MediaItem
-            src="/assets/Pick and place Robotic Arm .mp4"
+            src= "/videos/robot-arm.mp4"
             type="video"
             caption=""
           />
