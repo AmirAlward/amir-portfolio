@@ -8,6 +8,8 @@ import ProjectTitleBlock from "../../components/ProjectTitleBlock.jsx";
 
 
 // Assets
+import robot from "../../assets/robot/robot-arm.mp4";
+
 import forward from "../../assets/robot/robotFKine.png";
 import Robot3DHero from "../../components/Robot3DHero";
 import inverseK from "../../assets/robot/robotInKine.png";
@@ -205,7 +207,7 @@ This project demonstrates complete mastery of robotic modeling, workspace analys
         </section>
 
         <MediaItem
-            src= "/videos/robot-arm.mp4"
+            src= {robot}
             type="video"
             caption=""
           />
