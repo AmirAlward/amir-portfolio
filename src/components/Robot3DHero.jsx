@@ -3,7 +3,7 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Stage, useGLTF } from "@react-three/drei";
 import { DRACOLoader } from "three/addons/loaders/DRACOLoader";
 
-const robotModelUrl = "/assets/ROBOT_MH_12_YASKWA.gltf";
+const robotModelUrl = "./assets/ROBOT_MH_12_YASKWA.gltf";
 
 function RobotModel() {
   const { scene } = useGLTF(
