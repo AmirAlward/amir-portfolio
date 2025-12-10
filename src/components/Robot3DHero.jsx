@@ -2,8 +2,10 @@ import React, { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Stage, useGLTF } from "@react-three/drei";
 import { DRACOLoader } from "three/addons/loaders/DRACOLoader";
+import CanvasLoader from "./Loader"; // adjust path
 
-const robotModelUrl = "./public/assets/ROBOT_MH_12_YASKWA.gltf";
+
+const robotModelUrl = "https://github.com/AmirAlward/amir-portfolio/blob/main/src/assets/ROBOT_MH_12_YASKWA.gltf";
 
 function RobotModel() {
   const { scene } = useGLTF(
@@ -28,7 +30,7 @@ export default function Robot3DHero() {
         <ambientLight intensity={1} />
         <directionalLight position={[10, 5, 1]} intensity={0.8} />
 
-        <Suspense fallback={null}>
+        <Suspense fallback={<CanvasLoader />}>
           <Stage environment="city" intensity={0} shadows={false}>
             <RobotModel />
           </Stage>
