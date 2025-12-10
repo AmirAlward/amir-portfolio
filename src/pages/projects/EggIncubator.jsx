@@ -11,10 +11,10 @@ import { motion } from "framer-motion";
 
 // Assets
 import BlockImage from "../../assets/incubator/block.png";
-import heroImage from "../../assets/incubator/hero.png";
+import heroImage from "../../assets/incubator/hero.webp";
 import dashboardImage from "../../assets/incubator/Dashboard.png";
-import touchScreenDashboard from "../../assets/incubator/Touch_Screen_Dashboard.png";
-import airFlowImage from "../../assets/incubator/air_circuilation.png";
+import touchScreenDashboard from "../../assets/incubator/Touch_Screen_Dashboard.webp";
+import airFlowImage from "../../assets/incubator/air_circuilation.webp";
 
 // ----------------------
 // Fade-in Component
