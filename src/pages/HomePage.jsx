@@ -151,7 +151,7 @@ and intelligent automation.                </p>
               transition={{ delay: 0.5 }}
             >
               <Button href="https://linkedin.com/in/amir-alward">LinkedIn</Button>
-              <Button href="/resume.pdf">Resume</Button>
+              <Button href="https://drive.google.com/file/d/1FV_yt9UrYyPi0ZI3ZcPlv2vmAPgNVZYp/view?usp=drive_link">Resume</Button>
             </motion.div>
 
             </div>
