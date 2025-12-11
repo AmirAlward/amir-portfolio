@@ -1,12 +1,11 @@
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
-import { Linkedin } from "lucide-react";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import incubator from "./../assets/incubator2.jpg";
-import robot from "./../assets/robotCard.png";
+import robot from "./../assets/robotCard.webp";
 import rainwaterSystem from "./../assets/ARWHS/Rainwater-Harvesting-System.jpg";
 
 const HomePage = () => {

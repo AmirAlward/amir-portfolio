@@ -18,7 +18,7 @@ const tempVideo =
 
 import BlockImage from "../../assets/incubator/block.png";
 import heroImage from "../../assets/incubator/hero.webp";
-import dashboardImage from "../../assets/incubator/Dashboard.png";
+import dashboardImage from "../../assets/incubator/Dashboard.webp";
 import touchScreenDashboard from "../../assets/incubator/Touch_Screen_Dashboard.webp";
 import airFlowImage from "../../assets/incubator/air_circuilation.webp";
 
