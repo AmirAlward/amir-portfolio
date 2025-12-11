@@ -1,23 +1,19 @@
 import React, { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Stage, useGLTF } from "@react-three/drei";
-import { DRACOLoader } from "three/addons/loaders/DRACOLoader";
+import { DRACOLoader } from "three/examples/jsm/loaders/DRACOLoader.js";
 import CanvasLoader from "./Loader"; // adjust path
-import robotModel from "../../assets/ROBOT_MH_12_YASKWA.gltf";
 
-
+// Use a URL for Vite to resolve
+const robotModelPath = new URL("../assets/ROBOT_MH_12_YASKWA.gltf", import.meta.url).href;
 
 function RobotModel() {
-  const { scene } = useGLTF(
-    robotModel,
-    undefined,
-    (loader) => {
-      const dracoLoader = new DRACOLoader();
-      loader.setDRACOLoader(dracoLoader);
-    }
-  );
+  const { scene } = useGLTF(robotModelPath, true, (loader) => {
+    const dracoLoader = new DRACOLoader();
+    loader.setDRACOLoader(dracoLoader);
+  });
 
-  // upright
+  // Upright the model
   scene.rotation.x = -Math.PI / 2;
 
   return <primitive object={scene} scale={0.001} />;
