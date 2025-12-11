@@ -4,8 +4,13 @@
     <meta charset="UTF-8">
     <title>Redirecting...</title>
     <script>
-      // Redirect unknown paths to index.html for React Router
-      const path = window.location.pathname.replace("/amir-portfolio", "");
+      // Get the current path without the repo base
+      let path = window.location.pathname.replace(/^\/amir-portfolio/, '');
+
+      // Remove leading slashes to avoid duplicates
+      path = path.replace(/^\/+/, '');
+
+      // Redirect to index.html with proper path
       window.location.replace("/amir-portfolio/" + path + window.location.search + window.location.hash);
     </script>
   </head>
