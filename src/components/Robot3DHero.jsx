@@ -2,7 +2,7 @@ import React, { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Stage, useGLTF } from "@react-three/drei";
 
-const robotModelPath = import.meta.env.BASE_URL + "/models/ROBOT MH 12 YASKWA.gltf";
+const robotModelPath = import.meta.env.BASE_URL + "/dist/models/ROBOT MH 12 YASKWA.gltf";
 
 function RobotModel() {
   const { scene } = useGLTF(robotModelPath);
