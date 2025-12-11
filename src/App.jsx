@@ -12,7 +12,7 @@ export default function App() {
     <>
       <ScrollToTop />
 
-      <Routes>
+      <Routes basename= "/my-portfolio/">
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/projects/iot-egg-incubator" element={<EggIncubator />} />
