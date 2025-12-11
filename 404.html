@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Redirecting...</title>
+    <script>
+      // Redirect unknown routes to index.html so React Router can handle them
+      const path = window.location.pathname.replace("/amir-portfolio", "");
+      window.location.replace("/amir-portfolio/" + path + window.location.search + window.location.hash);
+    </script>
+  </head>
+  <body></body>
+</html>
