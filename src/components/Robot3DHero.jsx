@@ -5,7 +5,7 @@ import { DRACOLoader } from "three/addons/loaders/DRACOLoader";
 import CanvasLoader from "./Loader"; // adjust path
 
 
-const robotModelUrl = "https://github.com/AmirAlward/amir-portfolio/blob/main/src/assets/ROBOT_MH_12_YASKWA.gltf";
+const robotModelUrl = import.meta.env.BASE_URL + "assets/ROBOT_MH_12_YASKWA.gltf";
 
 function RobotModel() {
   const { scene } = useGLTF(

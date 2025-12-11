@@ -2,12 +2,11 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
-
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react(),  
-        tailwindcss(),
-
-],
-base: "/amir-portfolio",
+  plugins: [
+    react(),
+    tailwindcss(),
+  ],
+  base: "/amir-portfolio/", // <-- make sure it ends with a slash
 });
