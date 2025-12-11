@@ -8,7 +8,7 @@ import ProjectTitleBlock from "../../components/ProjectTitleBlock.jsx";
 
 
 // Assets
-const robot = "/amir-portfolio/videos/robot-arm.mp4";
+const robot = "https://res.cloudinary.com/drotvgoxr/video/upload/f_auto:video,q_auto/robot-arm_iqjovt.mp4";
 
 
 import forward from "../../assets/robot/robotFKine.png";
