@@ -10,6 +10,8 @@ import VideoOnScroll from "../../components/layout/VideoOnScroll.jsx";
 import { motion } from "framer-motion";
 
 // Assets
+import incubatorVideo from "../../assets/incubator/Incubator_Working.mp4";
+import tempVideo from "../../assets/incubator/Temp.mp4";
 import BlockImage from "../../assets/incubator/block.png";
 import heroImage from "../../assets/incubator/hero.webp";
 import dashboardImage from "../../assets/incubator/Dashboard.png";
@@ -111,7 +113,7 @@ export default function EggIncubator() {
           title="Demonstration Video"
           description="The IoT Egg Incubator autonomously maintains precise temperature and humidity while gently turning eggs for uniform development. In this demo, you’ll see it reach the target temperature in under 20 minutes, hold ±0.03 °C stability at the egg level, and perform automated egg-turning cycles. Real-time monitoring and remote control are enabled via IoT, showcasing the system’s fully autonomous operation."
         >
-          <MediaItem src="/videos/Incubator_Working.mp4" type="video" caption="Incubator working in real-time" />
+          <MediaItem src={incubatorVideo} type="video" caption="Incubator working in real-time" />
         </MediaSection>
 
         {/* Temperature / PID Performance */}
@@ -119,7 +121,8 @@ export default function EggIncubator() {
           title="Temperature Control Performance"
           description="The IoT Egg Incubator quickly reached the target temperature and maintained ±0.03 °C precision at the egg level. Automated egg-turning ensured uniform orientation, while IoT monitoring provided real-time data for temperature, humidity, and turning cycles. The system demonstrated reliable, fully autonomous operation, reducing manual intervention and improving hatching consistency."
         >
-          <MediaItem src="/videos/Temp.mp4" type="video" caption="Real-time PID tuning and temperature results" />
+          <MediaItem src={tempVideo} type="video" caption="Real-time PID tuning and temperature results" />
+
         </MediaSection>
 
         {/* Solution */}
