@@ -8,5 +8,6 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
-  base: "/amir-portfolio/", // <-- make sure it ends with a slash
+  base: "/amir-portfolio/",
+
 });

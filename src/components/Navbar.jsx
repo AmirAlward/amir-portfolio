@@ -95,7 +95,7 @@ const Navbar = () => {
           flexDirection: "row",
         }}
       >
-        <style jsx>{`
+        <style >{`
           nav[data-border='true']::after {
             content: '';
             position: absolute;
