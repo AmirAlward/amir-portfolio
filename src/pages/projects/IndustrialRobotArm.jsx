@@ -8,7 +8,7 @@ import ProjectTitleBlock from "../../components/ProjectTitleBlock.jsx";
 
 
 // Assets
-const robot = import.meta.env.BASE_URL + "videos/robot-arm.mp4";
+const robot = "/amir-portfolio/videos/robot-arm.mp4";
 
 
 import forward from "../../assets/robot/robotFKine.png";
