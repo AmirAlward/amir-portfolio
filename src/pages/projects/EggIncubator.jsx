@@ -10,8 +10,12 @@ import VideoOnScroll from "../../components/layout/VideoOnScroll.jsx";
 import { motion } from "framer-motion";
 
 // Assets
-import incubatorVideo from "../../assets/incubator/Incubator_Working.mp4";
-import tempVideo from "../../assets/incubator/Temp.mp4";
+const incubatorVideo =
+  "https://res.cloudinary.com/drotvgoxr/video/upload/f_auto:video,q_auto/Incubator_Working_teb0q9.mp4";
+
+const tempVideo =
+  "https://res.cloudinary.com/drotvgoxr/video/upload/f_auto:video,q_auto/Temp_sfg2dz.mp4";
+
 import BlockImage from "../../assets/incubator/block.png";
 import heroImage from "../../assets/incubator/hero.webp";
 import dashboardImage from "../../assets/incubator/Dashboard.png";
@@ -67,7 +71,14 @@ const MediaItem = ({ src, type, caption }) => (
     )}
 
 {type === "video" && (
-  <VideoOnScroll src={src} />
+  <VideoOnScroll 
+    src={src}
+    autoPlay
+    loop
+    playsInline
+    className="w-full max-w-3xl h-auto rounded-md"
+    preload="metadata"
+  />
 )}
 
 

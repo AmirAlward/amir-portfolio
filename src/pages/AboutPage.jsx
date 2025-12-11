@@ -121,7 +121,7 @@ const AboutPage = () => {
   animate={{ opacity: 1, y: 0 }}
   transition={{ delay: 0.5 }}
 >
-  <Button href="https://linkedin.com/in/amiralward">
+  <Button href="https://linkedin.com/in/amir-alward">
     LinkedIn
   </Button>
   <Button 

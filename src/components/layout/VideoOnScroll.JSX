@@ -28,7 +28,8 @@ const VideoOnScroll = ({ src }) => {
     <video
       ref={videoRef}
       src={src}
-      muted
+      controls
+      
       loop
       playsInline
       preload="metadata"

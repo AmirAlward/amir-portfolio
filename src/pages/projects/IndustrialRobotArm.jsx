@@ -4,6 +4,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
+import VideoOnScroll from "../../components/layout/VideoOnScroll.jsx"; 
+
 import ProjectTitleBlock from "../../components/ProjectTitleBlock.jsx";
 
 
@@ -40,9 +42,8 @@ const MediaItem = ({ src, type, caption }) => (
       />
     )}
     {type === "video" && (
-  <video
+  <VideoOnScroll 
     src={src}
-    controls
     autoPlay
     loop
     muted
